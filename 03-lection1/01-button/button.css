@@ -2,60 +2,66 @@
 .button {
     width: 189px;
     height: 48px;
+    padding: 1px;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
     border-radius: 8px;
+    border: 0; 
+    box-shadow: none;
+    cursor: pointer;
 }
 
-.button__primary {
-    border: 0;
+.button_primary {    
     background: var(--blue-1);
     color: var(--white);  
 }
 
-.button__primary:hover {
+.button_primary:hover {
     background: var(--blue-2);
     transition:  all 0.2s linear;
-    cursor: pointer;
+    
 }
 
-.button__primary:disabled {
-    background: var(--blue-1);
+.button_primary:disabled {
     opacity: 0.5;
     cursor: default;
+    pointer-events: none;
 }
 
-.button__secondary {
-    border: 0;
+.button_secondary {    
     background: var(--purple);
     color: var(--white);
 }
 
-.button__secondary:hover {
+.button_secondary:hover {
     background: var(--purple-1);
     transition:  all 0.2s linear;
-    cursor: pointer;
+    
 }
 
-.button__secondary:disabled {
-    background: var(--purple);
+.button_secondary:disabled {   
     opacity: 0.5;
     cursor: default;
+    pointer-events: none;
 }
 
-.button__alternate {
+.button_alternate {
     border: 1px solid var(--grey-3);
     background: var(--white);
     color: var(--grey-4);
 }
 
-.button__alternate:hover {
+.button_alternate:hover {
     border: 1px solid var(--black);
     transition:  all 0.2s linear;
-    cursor: pointer;
+    
 }
 
-.button__alternate:disabled {
-    border: 1px solid var(--grey-3);
+.button_alternate:disabled {
     opacity: 0.5;
     cursor: default;
+    pointer-events: none;
 }
