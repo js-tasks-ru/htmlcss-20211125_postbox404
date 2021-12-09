@@ -12,6 +12,7 @@
     border: 0; 
     box-shadow: none;
     cursor: pointer;
+    transition:  all 0.2s linear;
 }
 
 .button_primary {    
@@ -20,9 +21,7 @@
 }
 
 .button_primary:hover {
-    background: var(--blue-2);
-    transition:  all 0.2s linear;
-    
+    background: var(--blue-2);    
 }
 
 .button_primary:disabled {
@@ -37,9 +36,7 @@
 }
 
 .button_secondary:hover {
-    background: var(--purple-1);
-    transition:  all 0.2s linear;
-    
+    background: var(--purple-1);   
 }
 
 .button_secondary:disabled {   
@@ -56,8 +53,6 @@
 
 .button_alternate:hover {
     border: 1px solid var(--black);
-    transition:  all 0.2s linear;
-    
 }
 
 .button_alternate:disabled {
