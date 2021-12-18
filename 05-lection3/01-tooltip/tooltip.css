@@ -47,9 +47,3 @@
     text-align: center;
     color: var(--grey-2);
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
