@@ -1,12 +1,11 @@
-.skeleton {    
+.skeleton {
     border: 1px solid var(--grey-3);
-    border-radius: 8px;    
+    border-radius: 8px;  
+    padding: 24px 40px 32px 24px;
 }
 
 .skeleton__header {
     display: flex;
-    padding-top: 24px;
-    padding-left: 24px;   
 }
 
 .skeleton__avatar {
@@ -30,24 +29,21 @@
     gap: 8px;
 }
 
-.skeleton_name {
-    width: 35%;  
+.skeleton__line_name {
+    width: 35%;
 }
 
-.skeleton_surname {
+.skeleton__line_surname {
     width: 60%;
 }
 
-.skeleton_info {
-    width: 100%;    
+.skeleton__line_info {
+    width: 100%;
 }
 
 .skeleton__body {
     padding-top: 24px;
-    padding-left: 24px;
-    padding-right: 40px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 32px;
 }
