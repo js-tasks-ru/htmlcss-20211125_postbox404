@@ -14,6 +14,9 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+
+    --grey-8: #334D6E;
+    --grey-9: #90A0B7;
     --grey-5: #E2E6E8;
     --grey-6: #F3F5F5;
     --grey-7: #E3E7EA;
@@ -23,8 +26,10 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+    --primary-lighten: #A0B1F5;
 }
 
 * {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
