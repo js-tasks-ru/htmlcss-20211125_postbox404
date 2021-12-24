@@ -51,15 +51,14 @@
     text-decoration: underline;
 }
 
-.checkbox__input[disabled] ~ .checkbox__state_disabled .checkbox__control {
+.checkbox__input[disabled] ~ .checkbox__state .checkbox__control {
     background: var(--grey-2);
     border-color: var(--grey-2);
     opacity: 0.5;
 }
 
-.checkbox__state_disabled {
-    display: flex;
-    align-items: center;
+.checkbox__input[disabled] + .checkbox__state {
     cursor: default;
     pointer-events: none;
 }
+
