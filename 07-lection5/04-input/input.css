@@ -1,8 +1,8 @@
-.form {
-    margin-bottom: 1rem;
+.form-group {
+    padding-bottom: 1rem;
 }
 
-.form__label {
+.form-group__label {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -12,9 +12,12 @@
     color: var(--grey-3);
 }
 
-.form__input > input {
+.form-group__input-wrapper {
+    position: relative;
+}
+
+.form-group__input-wrapper > .form-group__input {
     width: 100%;
-    max-width: 350px;
     height: 56px;
     background: var(--white);
     border: 1px solid var(--grey-2);
@@ -27,7 +30,7 @@
     padding-left: 24px;
 }
 
-input::placeholder {
+.form-group__input::placeholder {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -35,30 +38,29 @@ input::placeholder {
     color: var(--grey-2);
 }
 
-.form__input > input:focus {
+.form-group__input-wrapper > .form-group__input:focus {
     border-color: var(--blue-1);
     outline: none;
 }
 
-.form_success,
-.form_invalid {
-    position: relative;
+.form-group__icon {
+    display: none;
 }
 
-.form__icon_success,
-.form__icon_invalid {
+.form-group__icon_success,
+.form-group__icon_invalid {
     position: absolute;
-    left: 312px;
+    right: 16px;
     top: 50%;
     transform: translate(0, -50%);
 }
 
-.form_invalid > input {
+.form-group_invalid > .form-group__input {
     border-color: var(--error);
     outline: none;
 }
 
-.form__input > input[disabled] {
+.form-group__input-wrapper > .form-group__input[disabled] {
     background: var(--grey-2);
     opacity: 0.5;
 }
