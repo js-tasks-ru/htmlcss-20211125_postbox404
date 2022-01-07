@@ -1,6 +1,6 @@
 .toggle {
     max-width: 3.25rem;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .toggle__input {
@@ -9,62 +9,56 @@
     opacity: 0;
 }
 
-.toggle__label {
-    margin-left: 80px;
-}
-
 .toggle__state {
-    cursor: pointer;
     position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    cursor: pointer;
+    appearance: none;
 }
 
 .toggle__state::after {
-    content: '';
-    width: 52px;
-    height: 28px;
-    background-color: var(--white);
-    border: 1px solid var(--grey-2);
-    border-radius: 15px;
-    position: absolute;
-    top: -4px;
-    right: -62px;
-}
-
-.toggle__state::before {
-    content: '';
-    height: 24px;
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: 1px;
+    top: 1px;
     width: 24px;
+    height: 24px;
     background-color: var(--grey-2);
     border-radius: 50%;
-    position: absolute;
-    right: -35px;
-    top: -1px;
-    z-index: 1;
     transition-duration: 400ms;
 }
 
-.toggle__input:checked + .toggle__state::before {
-    right: -58px;
-    background-color: var(--white);
+.toggle__label {
+    position: absolute;
+    margin-left: 12px;
 }
 
 .toggle__input:checked + .toggle__state::after {
+    background-color: var(--white);
+    transform: translateX(100%);
+}
+
+.toggle__input:checked + .toggle__state {
     background-color: var(--blue-1);
     border: 1px solid var(--blue-1);
 }
 
-.toggle__input[disabled] ~ .toggle__state::before {
-    background: var(--grey-3);
+.toggle__input[disabled] ~ .toggle__state {
+    background: var(--grey-2);
     opacity: 0.5;
 }
 
 .toggle__input[disabled] ~ .toggle__state::after {
-    background: var(--grey-2);
+    background: var(--grey-3);
 }
 
 .toggle__input[disabled] + .toggle__state {
     cursor: default;
     pointer-events: none;
 }
-
-
