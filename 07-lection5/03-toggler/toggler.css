@@ -19,6 +19,7 @@
     border-radius: 16px;
     cursor: pointer;
     appearance: none;
+    margin-right: 12px;
 }
 
 .toggle__state::after {
@@ -36,7 +37,6 @@
 
 .toggle__label {
     position: absolute;
-    margin-left: 12px;
 }
 
 .toggle__input:checked + .toggle__state::after {
