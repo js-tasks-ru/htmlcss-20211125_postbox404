@@ -4,11 +4,19 @@
     background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
 }
 
 .card__body {
-    padding: 61px 25px 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
+
 
 .card__footer {
     text-align: center;
@@ -18,4 +26,17 @@
     font-size: 21px;
     line-height: 25px;
     color: var(--black);
+}
+
+.card__link {
+    text-decoration: none;
+}
+
+.grid-input {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    margin-top: 55px;
 }
