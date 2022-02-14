@@ -18,6 +18,10 @@
         <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
         <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
+        <link rel="stylesheet" href="./07-lection5/04-input/input.css">
+        <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
     </head>
     <body>
         <div class="page">
@@ -57,8 +61,8 @@
                             </div>
                             <div class="header__toggle">
                                 <div class="toggle">
-                                    <input class="toggle__input" id="switch1" type="checkbox">
-                                    <label class="toggle__state" for="switch1"></label>
+                                    <input class="toggle__input" id="switch" type="checkbox">
+                                    <label class="toggle__state" for="switch"></label>
                                 </div>
                             </div>
                             <div class="header__moon">
@@ -73,240 +77,712 @@
             </header>
             <main class="preview">
                 <div class="container">
-                    <div class="preview__grid">
-                        <a href="#" class="card__link"><div class="card">
-                            <div class="card__body">
-                                <div class="tooltip_preview">
-                                    <div class="tooltip__icon" style="top: 30px">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#212429"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z" fill="#212429"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="#212429"/>
-                                        </svg>
-                                    </div>
-                                    <div class="tooltip__bubble" style="top: -50px">
-                                        <div class="tooltip__text">Helper text</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__footer">Tooltip</div>
-                        </div></a>
-                        <a href="#" class="card__link"><div class="card">
-                            <div class="card__body">
-                                <div class="grid-input">
-                                    <div class="checkbox__defoult">
-                                        <label class="checkbox">
-                                            <input type="checkbox" class="checkbox__input">
-                                            <span class="checkbox__state">
-                                                <span class="checkbox__control">
-                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>                        
-                                                </span>
-                                                <span class="checkbox__label">Default</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="checkbox__checked">
-                                        <label class="checkbox">
-                                            <input type="checkbox" class="checkbox__input" checked>
-                                            <span class="checkbox__state">
-                                                <span class="checkbox__control">
-                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </span>
-                                                <span class="checkbox__label">Checked</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="checkbox__disabled">
-                                        <label class="checkbox">
-                                            <input type="checkbox" class="checkbox__input" disabled>
-                                            <span class="checkbox__state">
-                                                <span class="checkbox__control">
-                                                </span>
-                                                <span class="checkbox__label">Disabled</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="radio__defoult">
-                                        <label class="radio">
-                                            <input type="radio" name="name1" class="radio__input">
-                                            <span class="radio__state">
-                                                <span class="radio__control">
-                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
-                                                    </svg>
-                                                </span>
-                                                <span class="radio__label">Default</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="radio__checked">
-                                        <label class="radio">
-                                            <input type="radio" name="name1" class="radio__input" checked>
-                                            <span class="radio__state">
-                                                <span class="radio__control">
-                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
-                                                    </svg>
-                                                </span>
-                                                <span class="radio__label">Checked</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="radio__disabled">
-                                        <label class="radio">
-                                            <input type="radio" class="radio__input" disabled>
-                                            <span class="radio__state">
-                                                <span class="radio__control">
-                                                </span>
-                                                <span class="radio__label">Disabled</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__footer">Custom form elements</div>
-                        </div></a>
-                        <a href="#" class="card__link"><div class="card">
-                            <div class="card__body">
-                                <div class="calendar calendar_mini">
-                                    <div class="calendar__title">December 2021</div>
-                                    <div class="calendar__wrapper">
-                                        <div class="calendar__inner">
-                                            <div class="calendar__item calendar__item_day">Mon</div>
-                                            <div class="calendar__item calendar__item_day">Tue</div>
-                                            <div class="calendar__item calendar__item_day">Wed</div>
-                                            <div class="calendar__item calendar__item_day">Thu</div>
-                                            <div class="calendar__item calendar__item_day">Fri</div>
-                                            <div class="calendar__item calendar__item_day">Sat</div>
-                                            <div class="calendar__item calendar__item_day">San</div>
-                                            <span class="calendar__item"></span>
-                                            <span class="calendar__item"></span>
-                                            <span class="calendar__item">1</span>
-                                            <span class="calendar__item">2</span>
-                                            <span class="calendar__item">3</span>
-                                            <span class="calendar__item">4</span>
-                                            <span class="calendar__item">5</span>
-                                            <span class="calendar__item">6</span>
-                                            <span class="calendar__item">7</span>
-                                            <span class="calendar__item">8</span>
-                                            <span class="calendar__item">9</span>
-                                            <span class="calendar__item">10</span>
-                                            <span class="calendar__item">11</span>
-                                            <span class="calendar__item">12</span>
-                                            <span class="calendar__item">13</span>
-                                            <span class="calendar__item">14</span>
-                                            <span class="calendar__item">15</span>
-                                            <span class="calendar__item">16</span>
-                                            <span class="calendar__item">17</span>
-                                            <span class="calendar__item">18</span>
-                                            <span class="calendar__item">19</span>
-                                            <span class="calendar__item calendar__item_active">20</span>
-                                            <span class="calendar__item calendar__item_beetwen-active">21</span>
-                                            <span class="calendar__item calendar__item_beetwen-active">22</span>
-                                            <span class="calendar__item calendar__item_beetwen-active">23</span>
-                                            <span class="calendar__item calendar__item_active">24</span>
-                                            <span class="calendar__item">25</span>
-                                            <span class="calendar__item">26</span>
-                                            <span class="calendar__item">27</span>
-                                            <span class="calendar__item">28</span>
-                                            <span class="calendar__item">29</span>
-                                            <span class="calendar__item">30</span>
-                                            <span class="calendar__item">31</span>
-                                            <span class="calendar__item"></span>
-                                            <span class="calendar__item"></span>
+                    <div class="tabs">
+                        <input type="radio" name="tab-btn" id="tab-btn-1" class="tab-btn-1" checked>
+                        <input type="radio" name="tab-btn" id="tab-btn-2" class="tab-btn-2">
+                        <input type="radio" name="tab-btn" id="tab-btn-3" class="tab-btn-3">
+                        <input type="radio" name="tab-btn" id="tab-btn-4" class="tab-btn-4">
+                        <ul class="tabs__menu">
+                            <li class="tabs__list"><label for="tab-btn-1" class="tabs__item">All components</label></li>
+                            <li class="tabs__list"><label for="tab-btn-2" class="tabs__item">Atoms</label></li>
+                            <li class="tabs__list"><label for="tab-btn-3" class="tabs__item">Molecules</label></li>
+                            <li class="tabs__list"><label for="tab-btn-4" class="tabs__item">Organisms</label></li>
+                        </ul>
+                        <div class="tabs__underline"></div>
+
+                        <div class="content-1">
+                            <div class="preview__grid">
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="tooltip_preview">
+                                            <div class="tooltip__icon" style="top: 30px">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#212429"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z" fill="#212429"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="#212429"/>
+                                                </svg>
+                                            </div>
+                                            <div class="tooltip__bubble" style="top: -50px">
+                                                <div class="tooltip__text">Helper text</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card__footer">Calendar</div>
-                        </div></a>
-                        
-                            <a href="#" class="card__link"><div class="card">
-                            <div class="card__body">
-                                <div class="modal_preview">
-                                    <div class="modal__window">
-                                        <div class="modal__title-close">
-                                            <h3 class="modal__title">Modal title</h3>
-                                            <div class="modal__close">
-                                                
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
-                                                    </svg>
+                                    <div class="card__footer">Tooltip</div>
+                                </div></a>
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="grid-input">
+                                            <div class="checkbox__defoult">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" class="checkbox__input">
+                                                    <span class="checkbox__state">
+                                                        <span class="checkbox__control">
+                                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                        
+                                                        </span>
+                                                        <span class="checkbox__label">Default</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox__checked">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" class="checkbox__input" checked>
+                                                    <span class="checkbox__state">
+                                                        <span class="checkbox__control">
+                                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="checkbox__label">Checked</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox__disabled">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" class="checkbox__input" disabled>
+                                                    <span class="checkbox__state">
+                                                        <span class="checkbox__control">
+                                                        </span>
+                                                        <span class="checkbox__label">Disabled</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="radio__defoult">
+                                                <label class="radio">
+                                                    <input type="radio" name="name1" class="radio__input">
+                                                    <span class="radio__state">
+                                                        <span class="radio__control">
+                                                            <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="radio__label">Default</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="radio__checked">
+                                                <label class="radio">
+                                                    <input type="radio" name="name1" class="radio__input" checked>
+                                                    <span class="radio__state">
+                                                        <span class="radio__control">
+                                                            <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="radio__label">Checked</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="radio__disabled">
+                                                <label class="radio">
+                                                    <input type="radio" class="radio__input" disabled>
+                                                    <span class="radio__state">
+                                                        <span class="radio__control">
+                                                        </span>
+                                                        <span class="radio__label">Disabled</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">Custom form elements</div>
+                                </div></a>
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="calendar calendar_mini">
+                                            <div class="calendar__title">December 2021</div>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__item calendar__item_day">Mon</div>
+                                                    <div class="calendar__item calendar__item_day">Tue</div>
+                                                    <div class="calendar__item calendar__item_day">Wed</div>
+                                                    <div class="calendar__item calendar__item_day">Thu</div>
+                                                    <div class="calendar__item calendar__item_day">Fri</div>
+                                                    <div class="calendar__item calendar__item_day">Sat</div>
+                                                    <div class="calendar__item calendar__item_day">San</div>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item">1</span>
+                                                    <span class="calendar__item">2</span>
+                                                    <span class="calendar__item">3</span>
+                                                    <span class="calendar__item">4</span>
+                                                    <span class="calendar__item">5</span>
+                                                    <span class="calendar__item">6</span>
+                                                    <span class="calendar__item">7</span>
+                                                    <span class="calendar__item">8</span>
+                                                    <span class="calendar__item">9</span>
+                                                    <span class="calendar__item">10</span>
+                                                    <span class="calendar__item">11</span>
+                                                    <span class="calendar__item">12</span>
+                                                    <span class="calendar__item">13</span>
+                                                    <span class="calendar__item">14</span>
+                                                    <span class="calendar__item">15</span>
+                                                    <span class="calendar__item">16</span>
+                                                    <span class="calendar__item">17</span>
+                                                    <span class="calendar__item">18</span>
+                                                    <span class="calendar__item">19</span>
+                                                    <span class="calendar__item calendar__item_active">20</span>
+                                                    <span class="calendar__item calendar__item_beetwen-active">21</span>
+                                                    <span class="calendar__item calendar__item_beetwen-active">22</span>
+                                                    <span class="calendar__item calendar__item_beetwen-active">23</span>
+                                                    <span class="calendar__item calendar__item_active">24</span>
+                                                    <span class="calendar__item">25</span>
+                                                    <span class="calendar__item">26</span>
+                                                    <span class="calendar__item">27</span>
+                                                    <span class="calendar__item">28</span>
+                                                    <span class="calendar__item">29</span>
+                                                    <span class="calendar__item">30</span>
+                                                    <span class="calendar__item">31</span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">Calendar</div>
+                                </div></a>
+                                
+                                    <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="modal_preview">
+                                            <div class="modal__window">
+                                                <div class="modal__title-close">
+                                                    <h3 class="modal__title">Modal title</h3>
+                                                    <div class="modal__close">
+                                                        
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
+                                                            </svg>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                                                    Velit officia consequat duis enim velit mollit...
+                                                </p>           
                                                 
                                             </div>
                                         </div>
-                                        <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                                            Velit officia consequat duis enim velit mollit...
-                                        </p>           
-                                        
                                     </div>
+                                    <div class="card__footer">Modal dialog</div>
                                 </div>
+                            </a>
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <section class="histogram">
+                                            <div class="histogram__header">
+                                                <div class="histogram__title">
+                                                    <div class="histogram__orders">Total orders</div>
+                                                    <div class="histogram__link">View all</div>
+                                                </div> 
+                                                <div class="histogram__total">50254</div>
+                                            </div>
+                                            <div class="histogram__bars">
+                                            <div class="histogram__bar" style="height: 100%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 100%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 100%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 90%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 34%"></div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="card__footer">Histogram</div>
+                                </div></a>
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="avatar__component-preview">
+                                            <div class="avatar__body">
+                                                <img src="./assets/images/sb.jpg" class="avatar__image" alt="Serega"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">Avatar</div>
+                                </div></a>
                             </div>
-                            <div class="card__footer">Modal dialog</div>
                         </div>
-                    </a>
-                        <a href="#" class="card__link"><div class="card">
-                            <div class="card__body">
-                                <section class="histogram">
-                                    <div class="histogram__header">
-                                        <div class="histogram__title">
-                                            <div class="histogram__orders">Total orders</div>
-                                            <div class="histogram__link">View all</div>
-                                        </div> 
-                                        <div class="histogram__total">50254</div>
+
+                        <div class="content-2">
+                            <div class="preview__grid-2">
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="tooltip_preview">
+                                            <div class="tooltip__icon" style="top: 30px">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#212429"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z" fill="#212429"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="#212429"/>
+                                                </svg>
+                                            </div>
+                                            <div class="tooltip__bubble" style="top: -50px">
+                                                <div class="tooltip__text">Helper text</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="histogram__bars">
-                                    <div class="histogram__bar" style="height: 100%"></div>
-                                    <div class="histogram__bar" style="height: 70%"></div>
-                                    <div class="histogram__bar" style="height: 44%"></div>
-                                    <div class="histogram__bar" style="height: 78%"></div>
-                                    <div class="histogram__bar" style="height: 44%"></div>
-                                    <div class="histogram__bar" style="height: 60%"></div>
-                                    <div class="histogram__bar" style="height: 78%"></div>
-                                    <div class="histogram__bar" style="height: 100%"></div>
-                                    <div class="histogram__bar" style="height: 22%"></div>
-                                    <div class="histogram__bar" style="height: 44%"></div>
-                                    <div class="histogram__bar" style="height: 60%"></div>
-                                    <div class="histogram__bar" style="height: 70%"></div>
-                                    <div class="histogram__bar" style="height: 22%"></div>
-                                    <div class="histogram__bar" style="height: 100%"></div>
-                                    <div class="histogram__bar" style="height: 22%"></div>
-                                    <div class="histogram__bar" style="height: 78%"></div>
-                                    <div class="histogram__bar" style="height: 60%"></div>
-                                    <div class="histogram__bar" style="height: 44%"></div>
-                                    <div class="histogram__bar" style="height: 70%"></div>
-                                    <div class="histogram__bar" style="height: 60%"></div>
-                                    <div class="histogram__bar" style="height: 22%"></div>
-                                    <div class="histogram__bar" style="height: 78%"></div>
-                                    <div class="histogram__bar" style="height: 70%"></div>
-                                    <div class="histogram__bar" style="height: 90%"></div>
-                                    <div class="histogram__bar" style="height: 60%"></div>
-                                    <div class="histogram__bar" style="height: 22%"></div>
-                                    <div class="histogram__bar" style="height: 60%"></div>
-                                    <div class="histogram__bar" style="height: 22%"></div>
-                                    <div class="histogram__bar" style="height: 70%"></div>
-                                    <div class="histogram__bar" style="height: 34%"></div>
+                                    <div class="card__footer">Tooltip</div>
+                                </div></a>
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="avatar__component-preview">
+                                            <div class="avatar__body">
+                                                <img src="./assets/images/sb.jpg" class="avatar__image" alt="Serega"/>
+                                            </div>
+                                        </div>
                                     </div>
-                                </section>
+                                    <div class="card__footer">Avatar</div>
+                                </div></a>
                             </div>
-                            <div class="card__footer">Histogram</div>
-                        </div></a>
-                        <a href="#" class="card__link"><div class="card">
-                            <div class="card__body">
-                                <div class="avatar__component-preview">
-                                    <div class="avatar__body">
-                                        <img src="./assets/images/sb.jpg" class="avatar__image" alt="Serega"/>
+                            <div class="buttons">
+                                <div class="buttons__title">BATTONS</div>
+                                <div class="buttons__body">
+                                    <div class="block">
+                                        <div class="buttons__name">Button</div>
+                                        <div class="buttons__name">Button disabled</div>
+                                        <button type="button" class="button button_primary">Primary</button>
+                                        <button type="button" class="button button_primary" disabled>Primary</button>
+                                        <button type="button" class="button button_secondary">Secondary</button>
+                                        <button type="button" class="button button_secondary" disabled>Secondary</button>
+                                        <button type="button" class="button button_alternate">Alternate</button>
+                                        <button type="button" class="button button_alternate" disabled>Alternate</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card__footer">Avatar</div>
-                        </div></a>
+                            <div class="castom-form-element">
+                                <div class="buttons__title">CUSTOM FORM ELEMENTS</div>
+                                <div class="castom-form-element__body">
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <span class="checkbox__state">
+                                            <span class="checkbox__control">
+                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                        
+                                            </span>
+                                            <span class="checkbox__label">Default</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" checked>
+                                        <span class="checkbox__state">
+                                            <span class="checkbox__control">
+                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                        
+                                            </span>
+                                            <span class="checkbox__label">Checked</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" disabled>
+                                        <span class="checkbox__state">
+                                            <span class="checkbox__control">
+                                            </span>
+                                            <span class="checkbox__label">Disabled</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="name1" class="radio__input">
+                                        <span class="radio__state">
+                                            <span class="radio__control">
+                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                </svg>   
+                                                                            
+                                            </span>
+                                            <span class="radio__label">Male</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="name1" class="radio__input" checked>
+                                        <span class="radio__state">
+                                            <span class="radio__control">
+                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                </svg>    
+                                                                            
+                                            </span>
+                                            <span class="radio__label">Female</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" class="radio__input" disabled>
+                                        <span class="radio__state">
+                                            <span class="radio__control">                      
+                                            </span>
+                                            <span class="radio__label">Special</span>
+                                        </span>
+                                    </label>
+                                    <div class="toggle">
+                                        <input class="toggle__input" id="switch1" type="checkbox">
+                                        <label class="toggle__state" for="switch1"></label>
+                                        <span class="toggle__label" style="transform: translate(65px, -25px);">Off</span>
+                                    </div>
+                                    <div class="toggle">
+                                        <input class="toggle__input" id="switch2" type="checkbox" checked>
+                                        <label class="toggle__state" for="switch2"></label>
+                                        <span class="toggle__label" style="transform: translate(65px, -25px);">On</span>
+                                    </div>
+                                    <div class="toggle">
+                                        <input class="toggle__input" id="switch3" type="checkbox" disabled>
+                                        <label class="toggle__state" for="switch3"></label>
+                                        <span class="toggle__label" style="transform: translate(65px, -25px);">Disabled</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-3">
+                            <div class="preview__grid-2">
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="grid-input">
+                                            <div class="checkbox__defoult">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" class="checkbox__input">
+                                                    <span class="checkbox__state">
+                                                        <span class="checkbox__control">
+                                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                        
+                                                        </span>
+                                                        <span class="checkbox__label">Dedault</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox__checked">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" class="checkbox__input" checked>
+                                                    <span class="checkbox__state">
+                                                        <span class="checkbox__control">
+                                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="checkbox__label">Checked</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox__disabled">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" class="checkbox__input" disabled>
+                                                    <span class="checkbox__state">
+                                                        <span class="checkbox__control">
+                                                        </span>
+                                                        <span class="checkbox__label">Disabled</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="radio__defoult">
+                                                <label class="radio">
+                                                    <input type="radio" name="name1" class="radio__input">
+                                                    <span class="radio__state">
+                                                        <span class="radio__control">
+                                                            <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="radio__label">Default</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="radio__checked">
+                                                <label class="radio">
+                                                    <input type="radio" name="name1" class="radio__input" checked>
+                                                    <span class="radio__state">
+                                                        <span class="radio__control">
+                                                            <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="radio__label">Checked</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="radio__disabled">
+                                                <label class="radio">
+                                                    <input type="radio" class="radio__input" disabled>
+                                                    <span class="radio__state">
+                                                        <span class="radio__control">
+                                                        </span>
+                                                        <span class="radio__label">Disabled</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">Custom form elements</div>
+                                </div></a>
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="calendar calendar_mini">
+                                            <div class="calendar__title">December 2021</div>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__item calendar__item_day">Mon</div>
+                                                    <div class="calendar__item calendar__item_day">Tue</div>
+                                                    <div class="calendar__item calendar__item_day">Wed</div>
+                                                    <div class="calendar__item calendar__item_day">Thu</div>
+                                                    <div class="calendar__item calendar__item_day">Fri</div>
+                                                    <div class="calendar__item calendar__item_day">Sat</div>
+                                                    <div class="calendar__item calendar__item_day">San</div>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item">1</span>
+                                                    <span class="calendar__item">2</span>
+                                                    <span class="calendar__item">3</span>
+                                                    <span class="calendar__item">4</span>
+                                                    <span class="calendar__item">5</span>
+                                                    <span class="calendar__item">6</span>
+                                                    <span class="calendar__item">7</span>
+                                                    <span class="calendar__item">8</span>
+                                                    <span class="calendar__item">9</span>
+                                                    <span class="calendar__item">10</span>
+                                                    <span class="calendar__item">11</span>
+                                                    <span class="calendar__item">12</span>
+                                                    <span class="calendar__item">13</span>
+                                                    <span class="calendar__item">14</span>
+                                                    <span class="calendar__item">15</span>
+                                                    <span class="calendar__item">16</span>
+                                                    <span class="calendar__item">17</span>
+                                                    <span class="calendar__item">18</span>
+                                                    <span class="calendar__item">19</span>
+                                                    <span class="calendar__item calendar__item_active">20</span>
+                                                    <span class="calendar__item calendar__item_beetwen-active">21</span>
+                                                    <span class="calendar__item calendar__item_beetwen-active">22</span>
+                                                    <span class="calendar__item calendar__item_beetwen-active">23</span>
+                                                    <span class="calendar__item calendar__item_active">24</span>
+                                                    <span class="calendar__item">25</span>
+                                                    <span class="calendar__item">26</span>
+                                                    <span class="calendar__item">27</span>
+                                                    <span class="calendar__item">28</span>
+                                                    <span class="calendar__item">29</span>
+                                                    <span class="calendar__item">30</span>
+                                                    <span class="calendar__item">31</span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">Calendar</div>
+                                </div></a>
+                            </div>
+                            <div class="buttons__title">SKELETON</div>
+                            <div class="skeleton">
+                                <div class="skeleton__header">
+                                    <div class="skeleton__avatar"></div>
+                                    <div class="skeleton__data">
+                                        <div class="skeleton__line skeleton__line_name"></div>
+                                        <div class="skeleton__line skeleton__line_surname"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton__body">
+                                    <div class="skeleton__line skeleton__line_info"></div>
+                                    <div class="skeleton__line skeleton__line_info"></div>
+                                </div>
+                            </div>
+                            <div class="buttons__title">CUSTOM FORM ELEMENTS</div>
+                            <div class="form-group__body">
+                                <div class="form-group">
+                                    <label class="form-group__label" for="input1">Label</label>
+                                    <div class="form-group__input-wrapper">
+                                        <input class="form-group__input" type="text" id="input1" placeholder="Placeholder">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-group__label" for="input2">Focus</label>
+                                    <div class="form-group__input-wrapper">
+                                        <input class="form-group__input" type="text" id="input2" value="Filled input" autofocus>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-group__label" for="input3">Success</label>
+                                    <div class="form-group__input-wrapper form-group_success">
+                                        <input class="form-group__input" type="text" id="input3" value="Success">
+                                        <svg class="form-group__icon form-group__icon_success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-group__label" for="input4">Error</label>
+                                    <div class="form-group__input-wrapper form-group_invalid">
+                                        <input class="form-group__input" type="text" id="input4" value="Error">
+                                        <svg class="form-group__icon form-group__icon_invalid" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.29 3.86002L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3438 1.64151 19.6872 1.81445 19.9905C1.98738 20.2939 2.23675 20.5468 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0127 20.2939 22.1856 19.9905C22.3585 19.6872 22.449 19.3438 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86002C13.5318 3.56613 13.2807 3.32314 12.9812 3.15451C12.6817 2.98587 12.3438 2.89728 12 2.89728C11.6563 2.89728 11.3184 2.98587 11.0188 3.15451C10.7193 3.32314 10.4683 3.56613 10.29 3.86002V3.86002Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-group__label" for="input5">Disabled</label>
+                                    <div class="form-group__input-wrapper">
+                                        <input class="form-group__input" type="text" id="input5" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-4">
+                            <div class="preview__grid-2">
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <div class="modal_preview">
+                                            <div class="modal__window">
+                                                <div class="modal__title-close">
+                                                    <h3 class="modal__title">Modal title</h3>
+                                                    <div class="modal__close">
+                                                        
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
+                                                            </svg>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                                                    Velit officia consequat duis enim velit mollit...
+                                                </p>           
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">Modal dialog</div>
+                                </div></a>
+                                <a href="#" class="card__link"><div class="card">
+                                    <div class="card__body">
+                                        <section class="histogram">
+                                            <div class="histogram__header">
+                                                <div class="histogram__title">
+                                                    <div class="histogram__orders">Total orders</div>
+                                                    <div class="histogram__link">View all</div>
+                                                </div> 
+                                                <div class="histogram__total">50254</div>
+                                            </div>     
+                                            
+                                            <div class="histogram__bars">
+                                            <div class="histogram__bar" style="height: 100%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 100%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 100%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 44%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 78%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 90%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 60%"></div>
+                                            <div class="histogram__bar" style="height: 22%"></div>
+                                            <div class="histogram__bar" style="height: 70%"></div>
+                                            <div class="histogram__bar" style="height: 34%"></div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="card__footer">Histogram</div>
+                                </div></a>
+                            </div>
+                            <div class="buttons__title">MODAL</div>
+                            <button type="button" class="button button_primary" id="modal-open">Open modal</button>
+                            <div class="modal" id="modal">
+                                <div class="modal__window">
+                                        <h3 class="modal__title">Modal title</h3>
+                                        <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat 
+                                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>           
+                                        <div class="modal__close">
+                                            <a href="#" title="close" id="modal-close">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
+                                                </svg>
+                                            </a>      
+                                        </div>
+                                </div>     
+                            </div>
+                            <div class="buttons__title">ACCORDION</div>
+                            <div class="accordion">
+                                <details class="accordion__item">
+                                    <summary class="accordion__title">
+                                        Accordion item 1
+                                    </summary>
+                                    <p class="accordion__body">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit. 
+                                        Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </details>
+                    
+                                <details class="accordion__item">
+                                    <summary class="accordion__title">
+                                        Accordion item 2
+                                    </summary>
+                                    <p class="accordion__body">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit. 
+                                        Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </details>
+                    
+                                <details class="accordion__item">
+                                    <summary class="accordion__title">
+                                        Accordion item 3
+                                    </summary>
+                                    <p class="accordion__body">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit. 
+                                        Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </details>
+                    
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </main>
             <footer class="footer">

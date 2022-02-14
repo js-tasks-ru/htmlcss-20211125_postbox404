@@ -10,3 +10,11 @@
     grid-gap: 30px;
     margin: 1.5rem 0;
 }
+
+.preview__grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3333% - 15px));
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin: 1.5rem 0;
+}

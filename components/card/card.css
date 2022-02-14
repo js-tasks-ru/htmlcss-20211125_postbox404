@@ -40,3 +40,44 @@
     grid-gap: 1rem;
     margin-top: 55px;
 }
+
+.buttons__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: var(--grey-3);
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+}
+
+.buttons__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.castom-form-element__body {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    margin-bottom: 60px;
+}
+
+.form-group__body {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3333% - 15px));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin: 3rem 0;
+}
