@@ -32,7 +32,7 @@
     text-decoration: none;
 }
 
-.grid-input {
+.card__grid-input {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
@@ -41,7 +41,7 @@
     margin-top: 55px;
 }
 
-.buttons__title {
+.card__title {
     font-style: normal;
     font-weight: 500;
     font-size: 38px;
@@ -51,7 +51,7 @@
     margin-bottom: 40px;
 }
 
-.block {
+.card__buttons {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
@@ -59,13 +59,13 @@
     grid-gap: 1rem;
 }
 
-.buttons__name {
+.card__buttons-name {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.castom-form-element__body {
+.card__castom-form-element {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -74,7 +74,7 @@
     margin-bottom: 60px;
 }
 
-.form-group__body {
+.card__form-group {
     display: grid;
     grid-template-columns: repeat(3, calc(33.3333% - 15px));
     grid-template-rows: repeat(2, 1fr);
