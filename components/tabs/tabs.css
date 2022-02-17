@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.tabs > input[type="radio"] {
+.tabs > .tabs__input {
     display: none;
 }
 
@@ -13,10 +13,10 @@
     display: none;
 }
 
-.tab-btn-1:checked ~ .content-1,
-.tab-btn-2:checked ~ .content-2,
-.tab-btn-3:checked ~ .content-3,
-.tab-btn-4:checked ~ .content-4 {
+.tabs__input_1:checked ~ .content-1,
+.tabs__input_2:checked ~ .content-2,
+.tabs__input_3:checked ~ .content-3,
+.tabs__input_4:checked ~ .content-4 {
     display: block;
 }
 
@@ -47,10 +47,10 @@
     border-bottom: 5px solid var(--black);
 }
 
-.tab-btn-1:checked ~ .tabs__menu label[for="tab-btn-1"],
-.tab-btn-2:checked ~ .tabs__menu label[for="tab-btn-2"],
-.tab-btn-3:checked ~ .tabs__menu label[for="tab-btn-3"],
-.tab-btn-4:checked ~ .tabs__menu label[for="tab-btn-4"] {
+.tabs__input_1:checked ~ .tabs__menu label[for="tab-btn-1"],
+.tabs__input_2:checked ~ .tabs__menu label[for="tab-btn-2"],
+.tabs__input_3:checked ~ .tabs__menu label[for="tab-btn-3"],
+.tabs__input_4:checked ~ .tabs__menu label[for="tab-btn-4"] {
     color: var(--black);
     padding-bottom: 3px;
     border-bottom: 5px solid var(--black);
