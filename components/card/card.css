@@ -32,11 +32,52 @@
     text-decoration: none;
 }
 
-.grid-input {
+.card__grid-input {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
     grid-gap: 1rem;
     margin-top: 55px;
+}
+
+.card__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: var(--grey-3);
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.card__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+}
+
+.card__buttons-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__castom-form-element {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    margin-bottom: 60px;
+}
+
+.card__form-group {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3333% - 15px));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin: 3rem 0;
 }
