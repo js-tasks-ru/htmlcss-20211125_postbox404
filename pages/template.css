@@ -1,6 +1,5 @@
 .template {
     background-color: #F9FAFC;
-    height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
@@ -69,4 +68,91 @@
     color: #ACB5BD;
     justify-content: center;
     align-items: center;
+}
+
+.template__component-title {
+    margin: 0 0 10px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+}
+
+.template__container {
+    padding: 2rem 3rem;
+}
+
+.template__tabs {
+    position: relative;
+}
+
+.template__tabs > .template__input {
+    display: none;
+}
+
+.template__tabs > .template__content-1,
+.template__tabs > .template__content-2 {
+    display: none;
+}
+
+.template__input_1:checked ~ .template__content-1,
+.template__input_2:checked ~ .template__content-2 {
+    display: block;
+}
+
+.template__nav {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.template__content-inner {
+    margin-bottom: 32px;
+}
+
+.template__item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 40px;
+    color: var(--grey-3);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.template__item:hover {
+    color: var(--black);
+    padding-bottom: 3px;
+    border-bottom: 5px solid var(--black);
+}
+
+.template__calendar {
+    margin-bottom: 32px;
+}
+
+.template__underline {
+    position: absolute;
+    width: 109vh;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, 0);
+    height: 1px;
+    background-color: var(--grey-2);
+    top: 29px;
+}
+
+.template__input_1:checked ~ .template__nav label[for="tab1"],
+.template__input_2:checked ~ .template__nav label[for="tab2"] {
+    color: var(--black);
+    padding-bottom: 3px;
+    border-bottom: 5px solid var(--black);
+}
+
+.template___code {
+    font-family: monospace, monospace;
+    font-size: 1em;
 }
