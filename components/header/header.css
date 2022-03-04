@@ -30,3 +30,23 @@
 .header__toggle {
     margin-left: 14px;
 }
+
+.header__mobile-menu {
+    display: none;
+}
+
+@media all and (max-width: 767px) {
+    .header__theme-changer {
+        display: none;
+    }
+    .header__bar {
+        display: flex;
+        justify-content: center;
+    }
+    .header__title {
+        font-size: 28px;
+    }
+    .header__mobile-menu {
+        display: block;
+    }
+}

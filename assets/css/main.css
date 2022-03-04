@@ -30,6 +30,7 @@
     --primary: var(--blue);
     --secondary: var(--purple);
     --primary-lighten: #A0B1F5;
+    --preview-bg: #F9FAFC;
 }
 
 * {

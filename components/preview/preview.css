@@ -1,5 +1,5 @@
 .preview {
-    background: #F9FAFC;
+    background: var(--preview-bg);
     flex-grow: 1;
 }
 
@@ -17,4 +17,15 @@
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 30px;
     margin: 1.5rem 0;
+}
+
+@media all and (max-width: 767px) {
+    .preview__grid {
+        display: grid;
+        grid-template-columns: repeat(1, calc(100% - 15px));
+    }
+    .preview__grid-2 {
+        display: grid;
+        grid-template-columns: repeat(1, calc(100% - 15px));
+    }
 }

@@ -10,12 +10,32 @@
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../05-lection3/01-tooltip/tooltip.css">
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
+    <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
     <title></title>
 </head>
 <body>
     <div class="template">
         <header class="header">
             <div class="container">
+                <div class="header__mobile-menu">
+                    <div class="burger">
+                        <input id="toggle" class="burger__toggle" type="checkbox"/>
+                        <label class="burger__button" for="toggle">
+                            <span class="burger__open"></span>
+                        </label>
+                        <div class="burger__menu">
+                            <p class="burger__menu-title">Components</p>
+                            <ul class="burger__menu-item">
+                                <li><a class="burger__menu-items" href="modal.html">Modal</a></li>
+                                <li><a class="burger__menu-items" href="tooltip.html">Tooltip</a></li>
+                                <li><a class="burger__menu-items" href="avatar.html">Avatar</a></li>
+                                <li><a class="burger__menu-items" href="calendar.html">Calendar</a></li>
+                                <li><a class="burger__menu-items" href="histogram.html">Histogram</a></li>
+                                <li><a class="burger__menu-items" href="castom-form-element.html">Custom form elements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="header__bar">
                     <a href="../index.html"><div class="header__figures">
                         <div class="header__square">
