@@ -17,7 +17,6 @@
     flex-grow: 1;
 }
 
-
 .card__footer {
     text-align: center;
     margin-top: 67px;
@@ -83,10 +82,6 @@
 }
 
 @media all and (max-width: 767px) {
-    .card {
-        width: 90%;
-        margin: 0 auto;
-    }
     .card__buttons {
         display: grid;
         grid-template-columns: repeat(1, auto);
@@ -104,10 +99,6 @@
         margin-bottom: 60px;
         justify-content: center;
     }
-    .card__skeleton {
-        width: 90%;
-        margin: 0 auto;
-    }
     .card__form-group {
         display: grid;
         grid-template-columns: repeat(1, auto);
@@ -117,11 +108,7 @@
         width: 90%;
         margin: 0 auto;
     }
-    .card__accordion {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .card__modal {
+    .card_mobile {
         width: 90%;
         margin: 0 auto;
     }
