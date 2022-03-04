@@ -22,11 +22,31 @@
         <link rel="stylesheet" href="./07-lection5/04-input/input.css">
         <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
+        <link rel="stylesheet" href="./09-lection7/01-burger-menu/burger-menu.css">
     </head>
     <body>
         <div class="page">
             <header class="header">
                 <div class="container">
+                    <div class="header__mobile-menu">
+                        <div class="burger">
+                            <input id="toggle" class="burger__toggle" type="checkbox"/>
+                            <label class="burger__button" for="toggle">
+                                <span class="burger__open"></span>
+                            </label>
+                            <div class="burger__menu">
+                                <p class="burger__menu-title">Components</p>
+                                <ul class="burger__menu-item">
+                                    <li><a class="burger__menu-items" href="./pages/modal.html">Modal</a></li>
+                                    <li><a class="burger__menu-items" href="./pages/tooltip.html">Tooltip</a></li>
+                                    <li><a class="burger__menu-items" href="./pages/avatar.html">Avatar</a></li>
+                                    <li><a class="burger__menu-items" href="./pages/calendar.html">Calendar</a></li>
+                                    <li><a class="burger__menu-items" href="./pages/histogram.html">Histogram</a></li>
+                                    <li><a class="burger__menu-items" href="./pages/castom-form-element.html">Custom form elements</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <div class="header__bar">
                         <div class="header__figures">
                             <div class="header__square">
@@ -91,8 +111,8 @@
                         <div class="tabs__underline"></div>
 
                         <div class="content-1">
-                            <div class="preview__grid">
-                                <a href="./pages/tooltip.html" class="card__link"><div class="card">
+                            <div class="preview__card-grid preview__card-grid_rows-2">
+                                <a href="./pages/tooltip.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="tooltip_preview">
                                             <div class="tooltip__icon" style="top: 30px">
@@ -109,7 +129,7 @@
                                     </div>
                                     <div class="card__footer">Tooltip</div>
                                 </div></a>
-                                <a href="./pages/castom-form-element.html" class="card__link"><div class="card">
+                                <a href="./pages/castom-form-element.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="card__grid-input">
                                             <div class="checkbox__defoult">
@@ -188,7 +208,7 @@
                                     </div>
                                     <div class="card__footer">Custom form elements</div>
                                 </div></a>
-                                <a href="./pages/calendar.html" class="card__link"><div class="card">
+                                <a href="./pages/calendar.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="calendar calendar_mini">
                                             <div class="calendar__title">December 2021</div>
@@ -243,7 +263,7 @@
                                     <div class="card__footer">Calendar</div>
                                 </div></a>
                                 
-                                    <a href="./pages/modal.html" class="card__link"><div class="card">
+                                    <a href="./pages/modal.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="modal_preview">
                                             <div class="modal__window">
@@ -268,7 +288,7 @@
                                     <div class="card__footer">Modal dialog</div>
                                 </div>
                             </a>
-                                <a href="./pages/histogram.html" class="card__link"><div class="card">
+                                <a href="./pages/histogram.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <section class="histogram">
                                             <div class="histogram__header">
@@ -314,7 +334,7 @@
                                     </div>
                                     <div class="card__footer">Histogram</div>
                                 </div></a>
-                                <a href="./pages/avatar.html" class="card__link"><div class="card">
+                                <a href="./pages/avatar.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="avatar__component-preview">
                                             <div class="avatar__body">
@@ -328,8 +348,8 @@
                         </div>
 
                         <div class="content-2">
-                            <div class="preview__grid-2">
-                                <a href="./pages/tooltip.html" class="card__link"><div class="card">
+                            <div class="preview__card-grid preview__card-grid_rows-1">
+                                <a href="./pages/tooltip.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="tooltip_preview">
                                             <div class="tooltip__icon" style="top: 30px">
@@ -346,7 +366,7 @@
                                     </div>
                                     <div class="card__footer">Tooltip</div>
                                 </div></a>
-                                <a href="./pages/avatar.html" class="card__link"><div class="card">
+                                <a href="./pages/avatar.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="avatar__component-preview">
                                             <div class="avatar__body">
@@ -457,8 +477,8 @@
                         </div>
 
                         <div class="content-3">
-                            <div class="preview__grid-2">
-                                <a href="./pages/castom-form-element.html" class="card__link"><div class="card">
+                            <div class="preview__card-grid preview__card-grid_rows-1">
+                                <a href="./pages/castom-form-element.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="card__grid-input">
                                             <div class="checkbox__defoult">
@@ -537,7 +557,7 @@
                                     </div>
                                     <div class="card__footer">Custom form elements</div>
                                 </div></a>
-                                <a href="./pages/calendar.html" class="card__link"><div class="card">
+                                <a href="./pages/calendar.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="calendar calendar_mini">
                                             <div class="calendar__title">December 2021</div>
@@ -593,17 +613,19 @@
                                 </div></a>
                             </div>
                             <div class="card__title">SKELETON</div>
-                            <div class="skeleton">
-                                <div class="skeleton__header">
-                                    <div class="skeleton__avatar"></div>
-                                    <div class="skeleton__data">
-                                        <div class="skeleton__line skeleton__line_name"></div>
-                                        <div class="skeleton__line skeleton__line_surname"></div>
+                            <div class="card_mobile">
+                                <div class="skeleton">
+                                    <div class="skeleton__header">
+                                        <div class="skeleton__avatar"></div>
+                                        <div class="skeleton__data">
+                                            <div class="skeleton__line skeleton__line_name"></div>
+                                            <div class="skeleton__line skeleton__line_surname"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="skeleton__body">
-                                    <div class="skeleton__line skeleton__line_info"></div>
-                                    <div class="skeleton__line skeleton__line_info"></div>
+                                    <div class="skeleton__body">
+                                        <div class="skeleton__line skeleton__line_info"></div>
+                                        <div class="skeleton__line skeleton__line_info"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card__title">CUSTOM FORM ELEMENTS</div>
@@ -651,32 +673,29 @@
                         </div>
 
                         <div class="content-4">
-                            <div class="preview__grid-2">
-                                <a href="./pages/modal.html" class="card__link"><div class="card">
+                            <div class="preview__card-grid preview__card-grid_rows-1">
+                                <a href="./pages/modal.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <div class="modal_preview">
                                             <div class="modal__window">
                                                 <div class="modal__title-close">
                                                     <h3 class="modal__title">Modal title</h3>
                                                     <div class="modal__close">
-                                                        
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
                                                             </svg>
-                                                        
                                                     </div>
                                                 </div>
                                                 <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
                                                     Velit officia consequat duis enim velit mollit...
-                                                </p>           
-                                                
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card__footer">Modal dialog</div>
                                 </div></a>
-                                <a href="./pages/histogram.html" class="card__link"><div class="card">
+                                <a href="./pages/histogram.html" class="card__link"><div class="card card_mobile">
                                     <div class="card__body">
                                         <section class="histogram">
                                             <div class="histogram__header">
@@ -725,60 +744,64 @@
                                 </div></a>
                             </div>
                             <div class="card__title">MODAL</div>
-                            <button type="button" class="button button_primary" id="modal-open">Open modal</button>
-                            <div class="modal" id="modal">
-                                <div class="modal__window">
-                                        <h3 class="modal__title">Modal title</h3>
-                                        <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat 
-                                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                                        </p>           
-                                        <div class="modal__close">
-                                            <a href="#" title="close" id="modal-close">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
-                                                </svg>
-                                            </a>      
-                                        </div>
-                                </div>     
+                            <div class="card_mobile">
+                                <button type="button" class="button button_primary" id="modal-open">Open modal</button>
+                                <div class="modal" id="modal">
+                                    <div class="modal__window">
+                                            <h3 class="modal__title">Modal title</h3>
+                                            <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                                                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat 
+                                                duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                            </p>           
+                                            <div class="modal__close">
+                                                <a href="#" title="close" id="modal-close">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
+                                                    </svg>
+                                                </a>      
+                                            </div>
+                                    </div>     
+                                </div>
                             </div>
                             <div class="card__title">ACCORDION</div>
-                            <div class="accordion">
-                                <details class="accordion__item">
-                                    <summary class="accordion__title">
-                                        Accordion item 1
-                                    </summary>
-                                    <p class="accordion__body">
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                        Velit officia consequat duis enim velit mollit. 
-                                        Exercitation veniam consequat sunt nostrud amet.
-                                    </p>
-                                </details>
-                    
-                                <details class="accordion__item">
-                                    <summary class="accordion__title">
-                                        Accordion item 2
-                                    </summary>
-                                    <p class="accordion__body">
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                        Velit officia consequat duis enim velit mollit. 
-                                        Exercitation veniam consequat sunt nostrud amet.
-                                    </p>
-                                </details>
-                    
-                                <details class="accordion__item">
-                                    <summary class="accordion__title">
-                                        Accordion item 3
-                                    </summary>
-                                    <p class="accordion__body">
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                        Velit officia consequat duis enim velit mollit. 
-                                        Exercitation veniam consequat sunt nostrud amet.
-                                    </p>
-                                </details>
-                    
+                            <div class="card_mobile">
+                                <div class="accordion">
+                                    <details class="accordion__item">
+                                        <summary class="accordion__title">
+                                            Accordion item 1
+                                        </summary>
+                                        <p class="accordion__body">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                            Velit officia consequat duis enim velit mollit. 
+                                            Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                        
+                                    <details class="accordion__item">
+                                        <summary class="accordion__title">
+                                            Accordion item 2
+                                        </summary>
+                                        <p class="accordion__body">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                            Velit officia consequat duis enim velit mollit. 
+                                            Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                        
+                                    <details class="accordion__item">
+                                        <summary class="accordion__title">
+                                            Accordion item 3
+                                        </summary>
+                                        <p class="accordion__body">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                            Velit officia consequat duis enim velit mollit. 
+                                            Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                        
+                                </div>
                             </div>
                         </div>
                     </div>

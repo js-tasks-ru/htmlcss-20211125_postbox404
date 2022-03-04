@@ -17,7 +17,6 @@
     flex-grow: 1;
 }
 
-
 .card__footer {
     text-align: center;
     margin-top: 67px;
@@ -81,3 +80,38 @@
     grid-gap: 30px;
     margin: 3rem 0;
 }
+
+@media all and (max-width: 767px) {
+    .card__buttons {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(8, auto);
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+    .card__castom-form-element {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(9, auto);
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    .card__form-group {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 30px;
+        margin: 3rem 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card_mobile {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
