@@ -22,6 +22,7 @@
     background: var(--white);
     border-radius: 10px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .template__menu-items {
@@ -153,13 +154,13 @@
     border-bottom: 5px solid var(--black);
 }
 
-.template___code {
+.template__code {
     font-family: monospace, monospace;
     font-size: 1em;
     overflow-x: auto;
 }
 
-@media all and (max-width: 767px) {--preview-bg
+@media all and (max-width: 767px) {
     .template__main-grid {
         display: block;
     }
