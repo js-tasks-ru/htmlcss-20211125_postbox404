@@ -37,7 +37,7 @@
 
 .template__menu-link {
     text-decoration: none;
-    color: #212429;
+    color: var(--black);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -127,9 +127,9 @@
 }
 
 .template__item:hover {
-    color: var(--black);
+    color: var(--hover-tabs);
     padding-bottom: 3px;
-    border-bottom: 5px solid var(--black);
+    border-bottom: 5px solid var(--hover-tabs);
 }
 
 .template__calendar {
@@ -149,15 +149,16 @@
 
 .template__input_1:checked ~ .template__nav label[for="tab1"],
 .template__input_2:checked ~ .template__nav label[for="tab2"] {
-    color: var(--black);
+    color: var(--hover-tabs);
     padding-bottom: 3px;
-    border-bottom: 5px solid var(--black);
+    border-bottom: 5px solid var(--hover-tabs);
 }
 
 .template__code {
     font-family: monospace, monospace;
     font-size: 1em;
     overflow-x: auto;
+    color: var(--black);
 }
 
 @media all and (max-width: 767px) {
