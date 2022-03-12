@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css">
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../10-lection8/theme-changer.css">
+    <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
     <title></title>
 </head>
 <body>
@@ -40,38 +42,38 @@
                     <a href="../index.html"><div class="header__figures">
                         <div class="header__square">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="30" fill="#212429"/>
+                            <rect class="header__svg" width="30" height="30" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                         <div class="header__round">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="32" height="32" rx="16" fill="#212429"/>
+                            <rect class="header__svg" width="32" height="32" rx="16" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                         <div class="header__triangle">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0L32 32H0V0Z" fill="#212429"/>
+                            <path class="header__svg" d="M0 0L32 32H0V0Z" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                     </div></a>
                     <div class="header__theme-changer">
                         <div class="header__sun">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 1V3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 21V23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M4.22021 4.21997L5.64021 5.63997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18.3599 18.36L19.7799 19.78" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M1 12H3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 12H23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M4.22021 19.78L5.64021 18.36" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18.3599 5.63997L19.7799 4.21997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 1V3" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 21V23" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.22021 4.21997L5.64021 5.63997" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.3599 18.36L19.7799 19.78" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 12H3" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H23" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.22021 19.78L5.64021 18.36" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.3599 5.63997L19.7799 4.21997" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                         </div>
                         <div class="header__toggle">
                             <div class="toggle">
-                                <input class="toggle__input" id="switch" type="checkbox">
-                                <label class="toggle__state" for="switch"></label>
+                                <input class="toggle__input" id="theme-changer" type="checkbox">
+                                <label class="toggle__state" for="theme-changer"></label>
                             </div>
                         </div>
                         <div class="header__moon">
@@ -120,7 +122,7 @@
                                 </ul>
                                 <div class="template__underline"></div>
                                 <div class="template__content-1">
-                                            <xmp class="template___code">
+                                            <xmp class="template__code">
     <div class="avatar">
         <div class="avatar__body">
             <img src="../../assets/images/sb.jpg"
@@ -131,7 +133,7 @@
                                         
                                 </div>
                                 <div class="template__content-2">
-                                    <xmp class="template___code">
+                                    <xmp class="template__code">
     .avatar {
         width: 102px;
         height: 102px;

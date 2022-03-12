@@ -42,18 +42,18 @@
 }
 
 .tabs__item:hover {
-    color: var(--black);
+    color: var(--hover-tabs);
     padding-bottom: 3px;
-    border-bottom: 5px solid var(--black);
+    border-bottom: 5px solid var(--hover-tabs);
 }
 
 .tabs__input_1:checked ~ .tabs__menu label[for="tab-btn-1"],
 .tabs__input_2:checked ~ .tabs__menu label[for="tab-btn-2"],
 .tabs__input_3:checked ~ .tabs__menu label[for="tab-btn-3"],
 .tabs__input_4:checked ~ .tabs__menu label[for="tab-btn-4"] {
-    color: var(--black);
+    color: var(--hover-tabs);
     padding-bottom: 3px;
-    border-bottom: 5px solid var(--black);
+    border-bottom: 5px solid var(--hover-tabs);
 }
 
 .tabs__underline {

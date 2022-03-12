@@ -30,6 +30,7 @@
     font-size: 16px;
     line-height: 24px;
     display: block;
+    color: var(--accordeon-text);
 }
 
 .accordion__title::-webkit-details-marker {  
@@ -38,7 +39,7 @@
 
 .accordion__body {
     padding: 0 48px 32px 32px;
-    color: var(--grey-4);
+    color: var(--accordeon-text);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

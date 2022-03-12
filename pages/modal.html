@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
     <link rel="stylesheet" href="../03-lection1/01-button/button.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../10-lection8/theme-changer.css">
+    <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
     <title></title>
 </head>
 <body>
@@ -41,17 +43,17 @@
                     <a href="../index.html"><div class="header__figures">
                         <div class="header__square">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="30" fill="#212429"/>
+                            <rect class="header__svg" width="30" height="30" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                         <div class="header__round">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="32" height="32" rx="16" fill="#212429"/>
+                            <rect class="header__svg" width="32" height="32" rx="16" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                         <div class="header__triangle">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0L32 32H0V0Z" fill="#212429"/>
+                            <path class="header__svg" d="M0 0L32 32H0V0Z" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                     </div></a>
@@ -71,8 +73,8 @@
                         </div>
                         <div class="header__toggle">
                             <div class="toggle">
-                                <input class="toggle__input" id="switch" type="checkbox">
-                                <label class="toggle__state" for="switch"></label>
+                                <input class="toggle__input" id="theme-changer" type="checkbox">
+                                <label class="toggle__state" for="theme-changer"></label>
                             </div>
                         </div>
                         <div class="header__moon">
@@ -117,8 +119,8 @@
                                             <div class="modal__close">
                                                 <a href="#" title="close" id="modal-close">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="var(--svg-figures)"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="var(--svg-figures)"/>
                                                     </svg>
                                                 </a>      
                                             </div>
@@ -135,7 +137,7 @@
                                 </ul>
                                 <div class="template__underline"></div>
                                 <div class="template__content-1">
-                                            <xmp class="template___code">
+                                            <xmp class="template__code">
     <button type="button" class="button button_primary" id="modal-open">
         Open modal
     </button>
@@ -180,7 +182,7 @@
                                         
                                 </div>
                                 <div class="template__content-2">
-                                    <xmp class="template___code">
+                                    <xmp class="template__code">
     .modal {
         position: fixed;
         display: none;

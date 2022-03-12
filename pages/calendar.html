@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../05-lection3/03-calendar/calendar.css">
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../10-lection8/theme-changer.css">
+    <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
     <title></title>
 </head>
 <body>
@@ -40,17 +42,17 @@
                     <a href="../index.html"><div class="header__figures">
                         <div class="header__square">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="30" fill="#212429"/>
+                            <rect class="header__svg" width="30" height="30" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                         <div class="header__round">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="32" height="32" rx="16" fill="#212429"/>
+                            <rect class="header__svg" width="32" height="32" rx="16" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                         <div class="header__triangle">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0L32 32H0V0Z" fill="#212429"/>
+                            <path class="header__svg" d="M0 0L32 32H0V0Z" fill="var(--svg-figures)"/>
                             </svg>
                         </div>
                     </div></a>
@@ -70,8 +72,8 @@
                         </div>
                         <div class="header__toggle">
                             <div class="toggle">
-                                <input class="toggle__input" id="switch" type="checkbox">
-                                <label class="toggle__state" for="switch"></label>
+                                <input class="toggle__input" id="theme-changer" type="checkbox">
+                                <label class="toggle__state" for="theme-changer"></label>
                             </div>
                         </div>
                         <div class="header__moon">
@@ -164,7 +166,7 @@
                                 </ul>
                                 <div class="template__underline"></div>
                                 <div class="template__content-1">
-                                            <xmp class="template___code">
+                                            <xmp class="template__code">
     <div class="calendar">
         <div class="calendar__title">December 2021</div>
         <div class="calendar__wrapper">
@@ -218,7 +220,7 @@
                                         
                                 </div>
                                 <div class="template__content-2">
-                                    <xmp class="template___code">
+                                    <xmp class="template__code">
     .calendar {
         width: 100%;
         max-width: 304px;
