@@ -1,4 +1,9 @@
+html, body {
+    height: 100%;   
+}
+
 .template {
+    min-height: 100%;
     background-color: var(--preview-bg);
     display: grid;
     grid-template-rows: auto 1fr auto;

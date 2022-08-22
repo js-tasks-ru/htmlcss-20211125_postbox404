@@ -23,7 +23,7 @@
 
 .histogram__bar {
     flex-basis: inherit;
-    width: 9px;
+    width: 0.5em;
     margin-right: 1px;
     background: var(--primary);
 }

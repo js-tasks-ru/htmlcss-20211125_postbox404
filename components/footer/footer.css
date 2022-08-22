@@ -22,3 +22,9 @@
     line-height: 24px;
     color: var(--black);
 }
+
+@media all and (max-width: 767px) {
+    .footer__info {
+        margin: 0px 30px;
+    }
+}
